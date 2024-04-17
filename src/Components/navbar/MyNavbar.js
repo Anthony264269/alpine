@@ -9,14 +9,14 @@ import Logo from '../../images/sources-homepage/logo/logo-white.png';
 function MyNavbar() {
   return (
     <header>
-      <Navbar expand="lg" className="Navbar">
+      <Navbar expand="lg" className="Navbar d-flex justify-content-around">
         <Container>
           <Navbar.Brand href="#home">
             <img src={Logo}></img>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
+            <Nav className="fs-5">
               <Nav.Link href="#home">Modèle</Nav.Link>
               <Nav.Link href="#link">Motorisation</Nav.Link>
               <Nav.Link href="#link">Connexion</Nav.Link>

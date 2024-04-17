@@ -1,0 +1,35 @@
+.sectionThree {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding-top: 0;
+    padding-left: 1%;
+}
+
+.sectionThree .card {
+    width: 50%;
+    height: 20%;
+}
+
+.sectionThree h3 {
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.sectionThree button img {
+
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.alpineChange{
+    width: 100%;
+    height: 100%;
+}

@@ -1,4 +1,3 @@
-import section1 from '../images/sources-homepage/A110/Alpine-A110-1.jpg';
 import './section-one.css';
 
 
@@ -9,7 +8,7 @@ function SectionOne() {
        
         <div className="sectionOne"> 
         <div className="card bg-white opacity-25 border-2">
-            <h1>Alpine présente sa gamme A110 </h1>
+            <h1 className='fs-1'>Alpine présente sa gamme A110 </h1>
             </div>
         </div>
     );

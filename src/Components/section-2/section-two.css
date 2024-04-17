@@ -1,0 +1,23 @@
+.sectionTwo {
+    background: url(../../images/sources-homepage/galerie/A110_LEGENDE_5.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+    width: 100%;
+    padding-top: 2%;
+    padding-left: 1%;
+}
+
+.sectionTwo .card {
+    
+    width: 50%;
+    height: 20%;
+}
+
+.sectionTwo h3 {
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

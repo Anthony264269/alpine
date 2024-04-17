@@ -1,9 +1,9 @@
 // src/app/store.js
 import { configureStore } from '@reduxjs/toolkit';
-import monReducer from '../features/monFeature/monSlice';
+import alpineReducer from '../app/slices/alpineSlice';
 
 export const store = configureStore({
   reducer: {
-    monNom: monReducer,
+   alpine: alpineReducer,
   },
 });
