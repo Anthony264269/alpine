@@ -1,0 +1,33 @@
+.sectionJante {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding-left: 10%;
+    padding-top: 10%;
+}
+
+.pictureJante {
+    display: flex;
+    width: auto;
+    height: 70%;
+    justify-content: flex-end;
+}
+
+.sectionJante button img {
+    border: transparent;
+    height: 10em;
+    width: 10em;
+
+}
+
+.sectionJante h3{
+    display: flex;
+    justify-content: center;
+}
+
+.selectJantes {
+
+    display: flex;
+
+}

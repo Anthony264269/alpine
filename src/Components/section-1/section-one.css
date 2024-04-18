@@ -2,27 +2,38 @@
     background: url(../../images/sources-homepage/A110/Alpine-A110-1.jpg);
     height: 100vh;
     background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: center; 
+    background-size: cover;
+    background-position: center;
     width: 100%;
-    padding-top: 2%;
-    padding-left: 1%;
-}
-
-.sectionOne .card {
-    
-    width: 40%;
-    height: 10%;
+    display: flex;
+    align-items: flex-start; /* Aligner le contenu en haut */
+    justify-content: flex-start; /* Aligner le contenu à gauche */
+    position: relative; /* Nécessaire pour positionner absolument la carte à l'intérieur */
+    padding-top: 2%; /* Ajustez en fonction de l'espacement souhaité */
+    padding-left: 1%; /* Ajustez en fonction de l'espacement souhaité */
+  }
+  
+  .sectionOne .card {
+    position: absolute; /* Position absolue pour placer précisément le cadre */
+    top: 5%; /* Distance du haut de .sectionOne */
+    left: 5%; /* Distance du côté gauche de .sectionOne */
+    width: auto; /* La largeur s'adapte au contenu */
+    height: auto; /* La hauteur s'adapte au contenu */
     display: flex;
     justify-content: center;
     align-items: center;
-
-}
-
-.sectionOne h1 {
-    color: rgb(0, 0, 0);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
+    background: rgba(255, 255, 255, 0.25); /* Fond avec transparence */
+    padding: 20px; /* Espace intérieur autour du texte */
+   
+  }
+  
+  
+  
+  .sectionOne h1 {
+    font-size: 2vw; /* Taille de texte basée sur la largeur de la vue */
+    color: rgb(0, 0, 0); /* Couleur du texte */
+    margin: 0; /* Suppression de la marge par défaut */
+    padding: 0; /* Suppression du padding par défaut si nécessaire */
+    white-space: nowrap; /* Empêche le texte de passer à la ligne suivante */
+  }
+ 

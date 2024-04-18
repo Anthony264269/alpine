@@ -16,7 +16,7 @@ function MyNavbar() {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="fs-5">
+            <Nav className="ms-auto fs-5">
               <Nav.Link href="#home">Modèle</Nav.Link>
               <Nav.Link href="#link">Motorisation</Nav.Link>
               <Nav.Link href="#link">Connexion</Nav.Link>

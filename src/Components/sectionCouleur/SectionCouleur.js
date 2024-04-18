@@ -1,5 +1,5 @@
 import React from 'react';
-import './section-three.css';
+import './sectionCouleur.css';
 import { useSelector, useDispatch } from "react-redux";
 import { setColor } from '../../app/slices/alpineSlice';
 import colorWhite from '../../images/configurateur/couleurs/selection/blanc.jpg';
@@ -22,9 +22,9 @@ const Alpine = () => {
   };
 
   return (
-    <div className="sectionThree">
+    <div className="sectionCouleur">
       <div className="container">
-        <div className='details col-6'>
+        <div className=''>
           <h3>Configurez votre véhicule</h3>
           <p>Couleur: {dataAlpine.alpine.color.name}</p>
           <p>Prix: {dataAlpine.alpine.color.price}$</p>
@@ -34,7 +34,7 @@ const Alpine = () => {
           <img className="alpineChange" src={dataAlpine.alpine.color.image} alt="Alpine Car" />
         </div>
       </div>
-      <div className='color-options d-flex justify-content-center'>
+      <div className='color-options container'>
         <h3>Couleurs</h3>
         <button onClick={() => handleColorChange('Peinture opaque blanc Glacier', 0, colorCarWhite)}>
           <img src={colorWhite} alt="Couleur blanche"></img>

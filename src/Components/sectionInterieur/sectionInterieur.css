@@ -1,0 +1,33 @@
+.sectionInterieur {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding-left: 10%;
+    padding-top: 10%;
+}
+
+.pictureInterieur {
+    display: flex;
+    width: auto;
+    height: 70%;
+    justify-content: flex-end;
+}
+
+.sectionInterieur button img {
+    border: transparent;
+    height: 10em;
+    width: 10em;
+
+}
+
+.sectionInterieur h3{
+    display: flex;
+    justify-content: center;
+}
+
+.selectJInterieur {
+
+    display: flex;
+
+}
