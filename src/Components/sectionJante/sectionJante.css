@@ -1,33 +1,148 @@
 .sectionJante {
-    height: 100vh;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    padding-left: 10%;
-    padding-top: 10%;
+    display: flex;
+    flex-direction: column; /* Pour que les éléments soient empilés verticalement */
+    align-items: center; /* Centrer horizontalement */
+    justify-content: flex-start; /* Aligner en haut de la section */
 }
 
 .pictureJante {
     display: flex;
     width: auto;
-    height: 70%;
+    height: 350px;
+    padding: 0;
+    margin: 0;
     justify-content: flex-end;
 }
 
-.sectionJante button img {
-    border: transparent;
-    height: 10em;
-    width: 10em;
-
+.alpineChangeJantes {
+    max-width: 100%;
+    height: auto;
 }
 
-.sectionJante h3{
-    display: flex;
-    justify-content: center;
-}
 
 .selectJantes {
-
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espacement entre les boutons */
+}
 
+.sectionJante button img {
+    border: 0;
+    height: 100px; /* Hauteur fixe pour les images des jantes */
+    width: auto; /* Largeur auto pour garder l'aspect ratio */
+}
+
+.jante-img {
+    margin: 5px; /* Ajustez cette valeur pour changer l'espace entre les images */
+    
+}
+
+
+.sectionJante button {
+    border: 0;
+
+}
+
+.sectionJante h3 {
+    display: flex;
+    margin-top: 20px; /* Ajouter un espace en haut */
+}
+
+.recap {
+   
+    width: 150px!important;
+}
+
+.sectionJante .card {
+    width: auto; /* Assurez-vous que la largeur s'adapte bien dans la colonne */
+    margin-bottom: 20px; /* Espace sous la carte */
+}
+
+
+@media screen and (max-width: 1560px) {
+
+    .pictureJante {
+        display: flex;
+        width: auto;
+        height: 350px;
+        padding: 0;
+        margin: 0;
+        justify-content: flex-end;
+    }
+    
+    .sectionJante button img {
+        border: 0;
+        height: 4em;
+        width: 6em;
+    
+    }
+
+    
+    
+}
+
+/* Ajouter ou ajuster les requêtes de médias existantes */
+@media screen and (max-width: 768px) {
+
+    .sectionJante {
+        margin-top: 200px;
+        
+    }
+
+    .sectionJante .container-fluid.h-100.p-0.d-flex {
+       
+        flex-direction: column-reverse; /* Empiler les enfants verticalement */
+        align-items: center; /* Etirer les éléments pour occuper la largeur entière */
+    }
+
+    .sectionJante .col-6 {
+        width: 100%; /* Prendre toute la largeur */
+        display: flex; /* Utiliser flex pour aligner le contenu interne */
+        justify-content: flex-end; /* Aligner le contenu à droite */
+        padding-right: 0; /* Enlever le padding à droite si nécessaire */
+    }
+
+    .alpineChangeJantes {
+        width: auto; /* Laisser la largeur auto pour éviter le débordement */
+        height: auto; /* Garder la hauteur auto pour le ratio */
+        max-width: 100%; /* S'assurer que l'image ne dépasse pas la largeur de l'écran */
+        align-self: flex-end; /* Aligner l'image à droite */
+    }
+
+    .sectionJante h3, 
+    .sectionJante .card {
+        order: 1; /* Titre et carte viennent en premier */
+        align-self: center; /* Centrer ces éléments */
+        text-align: center; /* Centrer le texte du titre */
+    }
+
+    .color-options{
+        order: 2; /* Les options de jantes viennent ensuite */
+        width: 100%; /* Prendre toute la largeur */
+        justify-content: center; /* Centrer les boutons */
+        margin-bottom: 0px;
+    }
+
+    .color-options button {
+        width: auto; /* Permettre à la taille du bouton d'être selon le contenu */
+        padding: 5px; /* Ajouter un peu de padding */
+        padding: 0;
+        margin: 0;
+        border: transparent;
+    }
+
+    .color-options img {
+        width: 50px; /* Ajuster la taille des images de jantes */
+        height: auto; /* Maintenir le ratio d'aspect */
+        border: transparent;
+    }
+
+    .sectionJante h3 {
+        display: flex;
+        margin: 0px;
+        padding: 0px;
+        align-items: start;
+        margin-bottom: 100px;
+    }
 }

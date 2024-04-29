@@ -8,6 +8,7 @@ import interieurLegende from "../../images/sources-homepage/versions/COMPO-LEGEN
 import interieurPure from "../../images/sources-homepage/versions/COMPO-PURE.png";
 import packLegende from "../../images/sources-homepage/versions/COMPO-LEGENDE.png";
 import packPure from "../../images/sources-homepage/versions/COMPO-PURE.png";
+import { setColor, calculateTotal } from '../../app/slices/alpineSlice';
 
 const Alpine = () => {
   const dataAlpine = useSelector((state) => state.alpine);
@@ -17,7 +18,7 @@ const Alpine = () => {
     newVersionName,
     newVersionPrice,
     newVersionImage1,
-    newVersionImage2
+    newVersionImage2,
   ) => {
     dispatch(
       setVersion({
@@ -27,11 +28,12 @@ const Alpine = () => {
         image2: newVersionImage2,
       })
     );
+    dispatch(calculateTotal());
   };
 
   return (
-    <div className="sectionVersion text-center">
-      <h3 className="d-flex justify-content-center">
+    <div className="sectionVersion text-center p-0">
+      <h3 className="d-flex justify-content-center pb-3">
         Selectionnez votre version
       </h3>
       <div className="d-flex justify-content-center">

@@ -1,39 +1,95 @@
 .sectionOne {
-    background: url(../../images/sources-homepage/A110/Alpine-A110-1.jpg);
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    display: flex;
-    align-items: flex-start; /* Aligner le contenu en haut */
-    justify-content: flex-start; /* Aligner le contenu à gauche */
-    position: relative; /* Nécessaire pour positionner absolument la carte à l'intérieur */
-    padding-top: 2%; /* Ajustez en fonction de l'espacement souhaité */
-    padding-left: 1%; /* Ajustez en fonction de l'espacement souhaité */
-  }
-  
-  .sectionOne .card {
-    position: absolute; /* Position absolue pour placer précisément le cadre */
-    top: 5%; /* Distance du haut de .sectionOne */
-    left: 5%; /* Distance du côté gauche de .sectionOne */
-    width: auto; /* La largeur s'adapte au contenu */
-    height: auto; /* La hauteur s'adapte au contenu */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.25); /* Fond avec transparence */
-    padding: 20px; /* Espace intérieur autour du texte */
-   
-  }
-  
-  
-  
-  .sectionOne h1 {
-    font-size: 2vw; /* Taille de texte basée sur la largeur de la vue */
-    color: rgb(0, 0, 0); /* Couleur du texte */
-    margin: 0; /* Suppression de la marge par défaut */
-    padding: 0; /* Suppression du padding par défaut si nécessaire */
-    white-space: nowrap; /* Empêche le texte de passer à la ligne suivante */
-  }
+  height: 100vh;
+}
+
+.sectionOne .background {
+  height: 100%;
+  padding-top: 500px;
+  background: url(../../images/sources-homepage/A110/Presentation_desktop-1.png);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sectionOne h1{
  
+  font-size: 4em;
+ text-align: center;
+ padding-bottom: 500px;
+  margin: 0;
+}
+
+.sectionOne h3 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.sectionOne .card {
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px; 
+  border: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .sectionOne .card {
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    border: 0;
+  }
+  
+  .sectionOne h1{
+    padding-top: 50px;
+    font-size: 60em;
+    margin: 0;
+  }
+
+  .sectionOne h3 {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .sectionOne .background {
+    
+      height: 50vh; /* Ajustez la hauteur selon vos besoins */
+      padding-top: 100px; /* Ajustez l'espacement en haut selon vos besoins */
+      background-size: auto; /* Ajustez la taille de l'image pour qu'elle s'adapte */
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .sectionOne .card {
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    border: 0;
+  }
+  
+  .sectionOne h1{
+    font-size: 25px;
+    margin: 0;
+  }
+
+  .sectionOne h3 {
+    font-size: 15px;
+    margin: 0;
+  }
+
+  .sectionOne .background {
+    height: 100%;
+    padding-top: 350px;
+    background: url(../../images/sources-homepage/A110/Presentation_desktop-1.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

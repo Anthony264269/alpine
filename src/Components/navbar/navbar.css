@@ -1,3 +1,11 @@
-.Navbar{
-    background-color: rgb(127, 142, 254);
-  }
+.Navbar {
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  background-image: url('../../images/bg/Capture d\'écran 2024-04-23 114452.png');
+}
+
+.Navbar img {
+  max-width: 100%;
+  height: auto;
+}

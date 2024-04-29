@@ -1,4 +1,4 @@
-.sectionCouleurCouleur {
+.sectionCouleur {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -7,9 +7,12 @@
     padding-left: 1%;
 }
 
+
 .sectionCouleur .card {
-    width: 50%;
-    height: 20%;
+    width: 300px;
+    height: auto;
+    margin-left: auto;
+    margin: 0 auto;
 }
 
 .sectionCouleur h3 {
@@ -19,20 +22,115 @@
     align-items: center;
 }
 
-
 .sectionCouleur button img {
+    padding: 1px;
+    height: 40px;
+    width: 30px;
+}
 
-    height: 50px;
-    width: 50px;
+.alpineChangeColor {
+    max-width: 100%;
+    height: auto;
 
 }
 
-.alpineChange{
-    width: 100%;
-    height: 100%;
-}
-
-.color-options{
+.color-options {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    /* Centrer les boutons */
+    align-items: center;
+    gap: 10px;
+    /* Espacement entre les boutons */
+}
+
+
+/* Ajout de media queries pour la responsivité */
+@media screen and (max-width: 1550px) {
+    .alpineChangeColor {
+        width: auto;
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .alpineChangeColor {
+        width: auto;
+        height: 350px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    .sectionCouleur {
+
+        height: vh-50;
+
+    }
+
+    .sectionCouleur .container.h-100.d-flex {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .alpineChangeColor {
+        width: 100%;
+        /* Adjust width if necessary */
+        height: auto;
+        /* Keep height auto for responsiveness */
+        order: 2;
+        /* Ensure image is below the title */
+    }
+
+    .color-options {
+     display: flex;
+     height: 150px;
+     width: 150px;
+     margin-bottom: 200px;
+        /* Espacement entre les boutons */
+    }
+
+    .sectionCouleur button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     
+        border: white;
+    }
+
+    .sectionCouleur .col-6 {
+        width: 100%;
+        
+       
+    }
+
+    .custom-h5 {
+
+        font-size: 15px;
+
+    }
+
+    .custom-p {
+        margin: 0px;
+        font-size: 15px;
+    }
+
+    .custom-span {
+        
+        font-size: 15px;
+
+    }
+    .sectionCouleur .card {
+        width: 200px;
+        height: 125px;
+        margin-left: auto;
+        margin: 0 auto;
+        margin-bottom: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
 }
